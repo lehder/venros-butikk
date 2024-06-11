@@ -1,0 +1,33 @@
+.w-full {
+  height: 100px;  
+}
+.p-4 {
+    background: rgb(146, 247, 146);
+ }
+.nav {
+    position: fixed;
+}
+.img-logo {
+    height: 50px;
+}
+.header-container {
+    background-image: url('./../../../../../assets/logo/george3082.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: cover;
+    height: 800px;  
+    /* opacity: calc(70%);  */
+}
+.parrafo {
+    /* border: 1px solid red; */
+    height: 800px;
+    width: 900px;
+    margin: 0 20px 0 40px;
+    padding: 150px 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
