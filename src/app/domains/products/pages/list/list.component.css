@@ -1,15 +1,40 @@
+/* * {
+    padding: 0;
+    margin: 0;
+  } */
+
 .w-full {
-  height: 100px;  
+  height: 100px; 
+  font-size: 1.5rem; 
 }
 .p-4 {
-    background: rgb(146, 247, 146);
+    /* background: rgb(146, 247, 146); */
+    position: fixed;
+    border: 1px solid red;
  }
+.font-medium {
+    margin-left: 800px;
+    font-style: italic;
+    font-weight: 800;
+}
+
 .nav {
     position: fixed;
+    float: left;
 }
-.img-logo {
-    height: 50px;
+/* .bg-green-400 {
+    background: rgb(146, 247, 146); 
+} */
+.logo {
+    border: 1px solid red;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
 }
+.title {
+    font-size: 2.5rem;
+}
+
 .header-container {
     background-image: url('./../../../../../assets/logo/george3082.jpeg');
     background-repeat: no-repeat;
@@ -25,7 +50,7 @@
     height: 800px;
     width: 900px;
     margin: 0 20px 0 40px;
-    padding: 150px 0 0 0;
+    padding: 300px 0 0 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: beige;
     font-size: 2.5rem;
