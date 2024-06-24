@@ -12,6 +12,7 @@ export class CounterComponent {
   @Input({required: true}) duration = 0;
   @Input({required: true}) message = '';
   counter = signal(0);
+  counterRef: number | undefined;
   
   constructor() {
     // NO ASYNC
@@ -39,7 +40,7 @@ export class CounterComponent {
     console.log('-'.repeat(10));
     console.log('duration =>', this.duration);
     console.log('message =>', this.message);
-    window.setInterval(() => {
+    this.counterRef = window.setInterval(() => {
       console.log('Run interval')
       this.counter.update(statePrev => statePrev + 1);
     }, 1000)
@@ -56,6 +57,7 @@ export class CounterComponent {
     // Destruye el componente
     console.log('ngOnDestroy');
     console.log('-'.repeat(10));
+    window.clearInterval(this.counterRef)
   }
 
   doSomething() {
