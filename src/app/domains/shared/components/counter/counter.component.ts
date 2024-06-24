@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChange, SimpleChanges } from '@angular/core';
+import { Component, Input, SimpleChange, SimpleChanges, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class CounterComponent {
   @Input({required: true}) duration = 0;
   @Input({required: true}) message = '';
+  counter = signal(0);
   
   constructor() {
     // NO ASYNC
@@ -38,6 +39,10 @@ export class CounterComponent {
     console.log('-'.repeat(10));
     console.log('duration =>', this.duration);
     console.log('message =>', this.message);
+    window.setInterval(() => {
+      console.log('Run interval')
+      this.counter.update(statePrev => statePrev + 1);
+    }, 1000)
   }
 
   ngAfterViewInit() {
