@@ -1,0 +1,26 @@
+.px-10 {
+    border: 1px solid red;
+    background-image: url('https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 1400px;
+    width: auto;
+    margin: 0;
+    object-fit: cover;
+}
+.text-lg {
+    color: black;
+    margin: 50px 50px;
+    font-size: 2.5rem;
+}
+.imagen {
+    width: 800px;
+    height: 400px;
+    margin: 50px 50px;
+}
+.text-xs {
+    margin:  50px 50px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
