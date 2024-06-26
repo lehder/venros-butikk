@@ -1,0 +1,64 @@
+.w-full {
+    height: 100px; 
+    font-size: 1.5rem; 
+  }
+  .p-4 {
+      /* background: rgb(146, 247, 146); */
+      position: fixed;
+   }
+  /* Esto es para cambiar color al menu */
+  
+  .md\:p-0 {
+      color: whitesmoke; 
+   } 
+  .font-medium { 
+      margin-left: 700px;
+      font-style: italic;
+      font-weight: 800;
+      font-size: xx-large;
+  }
+  
+  .nav {
+      position: fixed;
+      float: left;
+  }
+  /* .bg-green-400 {
+      background: rgb(146, 247, 146); 
+  } */
+  .logo {
+      border: 1px solid red;
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+  }
+  
+  .title {
+      font-size: 2.5rem;
+  }
+  
+  .header-container {
+      background-image: url('./../../../../../assets/logo/george3082.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      object-fit: cover;
+      height: 800px;  
+      /* opacity: calc(70%);  */
+  }
+  .parrafo {
+      /* border: 1px solid red; */
+      height: 800px;
+      width: 900px;
+      margin: 0 20px 0 40px;
+      padding: 300px 0 0 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: beige;
+      font-size: 2.5rem;
+      font-weight: 600;
+  }
+  .gap-8 {
+      padding: 40px 0px 0px 60px; 
+      background-color: rgb(247, 247, 244);
+  }
+  
