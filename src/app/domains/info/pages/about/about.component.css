@@ -1,5 +1,4 @@
 .px-10 {
-    border: 1px solid red;
     background-image: url('https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s');
     background-size: cover;
     background-repeat: no-repeat; 
@@ -8,19 +7,49 @@
     margin: 0;
     object-fit: cover;
 }
+
+.h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .text-lg {
     color: black;
-    margin: 50px 50px;
+    margin: 0px 0px;
+    padding: 50px;
     font-size: 2.5rem;
 }
-.imagen {
-    width: 800px;
-    height: 400px;
-    margin: 50px 50px;
+
+.container {
+    margin: 100px 20px 0 0;
+    display: grid;
+    grid-template-columns: 
+      repeat(auto-fit,
+      minmax(150px, 2fr )
+      );
+    gap: 32px;  
 }
-.text-xs {
-    margin:  50px 50px;
+
+.imagen-1 {
+   margin-left: 200px;
+   border-radius: 8px;
+   width: 500px;
+   height: auto;
+   box-shadow: 0px 0px 30px #000;     
+}
+.description {
+    font-family: Lexend Deca, sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 0.5px;
-    text-transform: lowercase;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: normal;
 }
+.imagen-2 {
+    margin-right: 200px;
+    border-radius: 8px;
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;     
+ }
