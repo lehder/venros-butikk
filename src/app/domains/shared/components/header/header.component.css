@@ -3,23 +3,28 @@
     font-size: 1.5rem; 
   }
   .p-4 {
+    height: 0;
+    padding: 0;
       /* background: rgb(146, 247, 146); */
-      position: fixed;
-   }
+    /* position: fixed;  */ 
+   } 
   /* Esto es para cambiar color al menu */
   
   .md\:p-0 {
-      color: whitesmoke; 
+      /* color: rgb(45, 44, 44);  */
+      color: beige;
+      padding: 20px;
    } 
   .font-medium { 
-      margin-left: 700px;
+      /* margin-left: 700px; */
       font-style: italic;
       font-weight: 800;
       font-size: xx-large;
   }
   
   .nav {
-      position: fixed;
+      border: 1px solid red;
+      position: fixed; 
       float: left;
   }
   /* .bg-green-400 {
@@ -33,7 +38,12 @@
   }
   
   .title {
-      font-size: 2.5rem;
+      font-size: 3.0rem;
+      color: beige;
+      padding: 40px;
+      margin-left: 30px;
+      font-weight: 600;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .header-container {
@@ -43,7 +53,7 @@
       background-position: center center;
       background-attachment: fixed;
       object-fit: cover;
-      height: 800px;  
+      height: 600px;  
       /* opacity: calc(70%);  */
   }
   .parrafo {
@@ -51,7 +61,7 @@
       height: 800px;
       width: 900px;
       margin: 0 20px 0 40px;
-      padding: 300px 0 0 0;
+      padding: 100px 0 0 0;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: beige;
       font-size: 2.5rem;
@@ -60,5 +70,10 @@
   .gap-8 {
       padding: 40px 0px 0px 60px; 
       background-color: rgb(247, 247, 244);
+  }
+
+  .relative {
+    border: 1px solid red;
+    height: 400px;
   }
   

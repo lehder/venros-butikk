@@ -40,6 +40,30 @@ export class ListComponent {
         title: 'Pro 4', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=14'
+      },
+      {
+        id: Date.now(),
+        title: 'Pro 5', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=28'
+      },
+      {
+        id: Date.now(),
+        title: 'Pro 6', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=11'
+      },
+      {
+        id: Date.now(),
+        title: 'Pro 7', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=23'
+      },
+      {
+        id: Date.now(),
+        title: 'Pro 8', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=10'
       }
     ];
     this.products.set(initProducts);
