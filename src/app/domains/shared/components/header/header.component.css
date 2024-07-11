@@ -13,7 +13,7 @@
   .md\:p-0 {
       /* color: rgb(45, 44, 44);  */
       color: beige;
-      padding: 20px;
+      padding: 20px; 
    } 
   .font-medium { 
       /* margin-left: 700px; */
@@ -56,6 +56,15 @@
       height: 600px;  
       /* opacity: calc(70%);  */
   }
+
+  /* .relative[_ngcontent-ng-c3460741518] {
+    border: 1px solid black;
+    height: 120px; 
+    margin-left: 200px;
+    margin: 0 ;
+}  */
+
+
   .parrafo {
       /* border: 1px solid red; */
       height: 800px;

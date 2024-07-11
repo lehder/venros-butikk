@@ -19,49 +19,49 @@ export class ListComponent {
     const initProducts: Product[] = [
       {
         id: Date.now(),
-        title: 'Pro 1', 
+        title: 'Producto 1', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=23'
       },
       {
         id: Date.now(),
-        title: 'Pro 2', 
+        title: 'Producto 2', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=17'
       },
       {
         id: Date.now(),
-        title: 'Pro 3', 
+        title: 'Producto 3', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=12'
       },
       {
         id: Date.now(),
-        title: 'Pro 4', 
+        title: 'Producto 4', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=14'
       },
       {
         id: Date.now(),
-        title: 'Pro 5', 
+        title: 'Producto 5', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=28'
       },
       {
         id: Date.now(),
-        title: 'Pro 6', 
+        title: 'Producto 6', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=11'
       },
       {
         id: Date.now(),
-        title: 'Pro 7', 
+        title: 'Producto 7', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=23'
       },
       {
         id: Date.now(),
-        title: 'Pro 8', 
+        title: 'Proproducto 8', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=10'
       }
