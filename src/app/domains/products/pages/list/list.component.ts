@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductComponent } from './../../components/product/product.component';
-import { Product } from './../../../shared/models/product.model';
+import { ProductComponent } from './../../components/product/product.component'
 import { HeaderComponent } from './../../../shared/components/header/header.component';
+import { Product } from '../../../shared/models/product.model';
 
 @Component({
   selector: 'app-list',
@@ -14,6 +14,7 @@ import { HeaderComponent } from './../../../shared/components/header/header.comp
 export class ListComponent {
 
   products = signal<Product[]>([]);
+  cart = signal<Product[]>([]);
 
   constructor() {
     const initProducts: Product[] = [
@@ -64,13 +65,61 @@ export class ListComponent {
         title: 'Proproducto 8', 
         price: 100, 
         image: 'https://picsum.photos/640/640?r=10'
+      },
+
+      {
+        id: Date.now(),
+        title: 'Producto 9', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=8'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 10', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=7'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 11', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=6'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 12', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=5'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 13', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=4'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 14', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=3'
+      },
+      {
+        id: Date.now(),
+        title: 'Producto 15', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=2'
+      },
+      {
+        id: Date.now(),
+        title: 'Proproducto 16', 
+        price: 100, 
+        image: 'https://picsum.photos/640/640?r=1'
       }
     ];
     this.products.set(initProducts);
   }
 
-  fromChild(event: string) {
-    console.log('Estamos en el padre');
-    console.log(event);
+  addToCart(product: Product) {
+   this.cart.update(prevState => [...prevState, product]); 
   }
 }
