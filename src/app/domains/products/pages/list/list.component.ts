@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ProductComponent } from './../../components/product/product.component'
 import { HeaderComponent } from './../../../shared/components/header/header.component';
 import { Product } from '../../../shared/models/product.model';
+import { RouterLinkWithHref } from '@angular/router';
+import { HomeComponent } from '../../../shared/components/home/home.component';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CommonModule, ProductComponent, HeaderComponent ],
+  imports: [CommonModule, ProductComponent, HeaderComponent, HomeComponent, RouterLinkWithHref ],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

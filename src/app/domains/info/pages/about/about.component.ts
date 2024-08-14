@@ -4,11 +4,13 @@ import { HeaderComponent } from '../../../shared/components/header/header.compon
 import { ListComponent } from '../../../products/pages/list/list.component';
 
 import { CounterComponent } from '../../../shared/components/counter/counter.component';
+import { RouterLinkWithHref } from '@angular/router';
+import { HomeComponent } from '../../../shared/components/home/home.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, CounterComponent, HeaderComponent, ListComponent ],
+  imports: [CommonModule, CounterComponent, HeaderComponent, ListComponent, RouterLinkWithHref, HomeComponent ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

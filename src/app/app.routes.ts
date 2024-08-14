@@ -1,19 +1,24 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule, PreloadAllModules  } from '@angular/router';
 
-// import { HomeComponent } from './domains/shared/components/home/home.component';
 import { ListComponent } from './domains/products/pages/list/list.component';
 import { AboutComponent } from './domains/info/pages/about/about.component';
 import { HeaderComponent } from './domains/shared/components/header/header.component';
-
+import { HomeComponent } from './domains/shared/components/home/home.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: ListComponent 
+        redirectTo: '/home',
+        pathMatch: 'full',
     },
     {
-        path: 'list',
-        component: ListComponent
+        path: 'home',
+        component: HomeComponent 
+    }, 
+    {
+        path: 'list', 
+        component: ListComponent, pathMatch: 'full'
     },
     {
         path: 'header',
@@ -25,3 +30,13 @@ export const routes: Routes = [
     }
     
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules
+    })],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule { }
+  
+  

@@ -1,5 +1,5 @@
 .w-full {
-    height: 100px; 
+    height: 130px; 
     font-size: 1.5rem; 
   }
   .p-4 {
@@ -8,12 +8,21 @@
       /* background: rgb(146, 247, 146); */
     /* position: fixed;  */ 
    } 
+
+   .p-1 {
+    height: 0;
+    padding: 0;
+    margin-top: 30px;
+      /* background: rgb(146, 247, 146); */
+    /* position: fixed;  */ 
+   } 
+   
   /* Esto es para cambiar color al menu */
   
   .md\:p-0 {
       /* color: rgb(45, 44, 44);  */
       color: beige;
-      padding: 20px; 
+      padding: 28px; 
    } 
   .font-medium { 
       /* margin-left: 700px; */
@@ -38,12 +47,28 @@
   }
   
   .title {
-      font-size: 3.0rem;
-      color: beige;
-      padding: 40px;
-      margin-left: 30px;
-      font-weight: 600;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.0rem;
+    color: beige;
+    padding: 40px 40px 0;
+    margin-left: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+  }
+  .subtitle {
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+     
+    color: rgb(9, 28, 25);
+    font-size: 1.5rem;
+    margin-left: 80px;
+    width: 210px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(85, 234, 234);
+    padding: 0;
   }
   
   .header-container {
