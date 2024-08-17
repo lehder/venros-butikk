@@ -4,7 +4,6 @@ import { Product } from '../../models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
 import { AboutComponent } from '../../../info/pages/about/about.component';
 
-
 @Component({
   selector: 'app-header',
   standalone: true,

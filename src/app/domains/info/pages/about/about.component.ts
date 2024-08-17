@@ -7,10 +7,11 @@ import { CounterComponent } from '../../../shared/components/counter/counter.com
 import { RouterLinkWithHref } from '@angular/router';
 import { HomeComponent } from '../../../shared/components/home/home.component';
 
+
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, CounterComponent, HeaderComponent, ListComponent, RouterLinkWithHref, HomeComponent ],
+  imports: [CommonModule, CounterComponent, HeaderComponent, ListComponent, RouterLinkWithHref, HomeComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

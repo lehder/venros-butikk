@@ -17,17 +17,19 @@ export const routes: Routes = [
         component: HomeComponent 
     }, 
     {
-        path: 'list', 
-        component: ListComponent, pathMatch: 'full'
-    },
-    {
         path: 'header',
         component: HeaderComponent
     },
     {
+        path: 'list', 
+        component: ListComponent, pathMatch: 'full'
+    },
+    
+    {
         path: 'about',
         component: AboutComponent
-    }
+    },
+    
     
 ];
 
