@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductComponent } from './../../components/product/product.component'
+import { ProductComponent } from './../../components/product/product.component';
 import { HeaderComponent } from './../../../shared/components/header/header.component';
 import { Product } from '../../../shared/models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
@@ -123,5 +123,5 @@ export class ListComponent {
 
   addToCart(product: Product) {
    this.cart.update(prevState => [...prevState, product]); 
-  }
+  }  
 }

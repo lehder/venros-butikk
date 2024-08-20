@@ -6,31 +6,33 @@ import { AboutComponent } from './domains/info/pages/about/about.component';
 import { HeaderComponent } from './domains/shared/components/header/header.component';
 import { HomeComponent } from './domains/shared/components/home/home.component';
 
+
+
 export const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full',
-    },
-    {
-        path: 'home',
-        component: HomeComponent 
-    }, 
-    {
-        path: 'header',
-        component: HeaderComponent
-    },
-    {
-        path: 'list', 
-        component: ListComponent, pathMatch: 'full'
-    },
     
-    {
-        path: 'about',
-        component: AboutComponent
-    },
-    
-    
+        {
+            path: '',
+            redirectTo: '/home',
+            pathMatch: 'full',
+        }, 
+        {
+            path: 'home',
+            component: HomeComponent, 
+        }, 
+        {
+            path: 'header',
+            component: HeaderComponent, 
+        },
+        {
+            path: 'list', 
+            component: ListComponent, pathMatch: 'full'
+        },
+        
+        {
+            path: 'about',
+            component: AboutComponent, 
+        },
+ 
 ];
 
 @NgModule({

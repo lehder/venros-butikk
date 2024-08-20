@@ -1,12 +1,12 @@
-<app-header [cart]="cart()"></app-header>
+<app-header [cart]="cart()"></app-header>  
 
 <!-- Card -->
 <div class="grid grid-cols-4 gap-8">
     
-    <app-product 
+       <app-product 
        *ngFor="let product of products()"
        [product]="product"  
-       (addToCart)="addToCart($event)"/> 
+       (addToCart)="addToCart($event)"/>  
 </div>
 <section>
     <footer class="bg-white dark:bg-gray-900">    

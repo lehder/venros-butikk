@@ -1,6 +1,7 @@
 .w-full {
     height: 130px; 
     font-size: 1.5rem; 
+    margin-left: 300px;
   }
   .p-4 {
     height: 0;
@@ -40,10 +41,12 @@
       background: rgb(146, 247, 146); 
   } */
   .logo {
-      border: 1px solid red;
-      height: 70px;
-      width: 70px;
+      height: 250px;
+      width: 400px;
       object-fit: cover;
+      margin: 0;
+      margin-left: 65px;
+      border-radius: 0 ;
   }
   
   .title {
@@ -61,25 +64,28 @@
     font-weight: 400;
     font-style: normal;
      
-    color: rgb(9, 28, 25);
+    /* color: rgb(9, 28, 25); */
+    color: rgb(93,96,95);
     font-size: 1.5rem;
-    margin-left: 80px;
-    width: 210px;
+    margin-left: 65px;
+    width: 400px;
     text-align: center;
-    border-radius: 10px;
-    background-color: rgb(85, 234, 234);
-    padding: 0;
+    border-radius: 0 0 10px 10px;
+    /* background-color: rgb(85, 234, 234); */
+    background-color: rgb(182,226,211);
+
   }
   
   .header-container {
-      background-image: url('./../../../../../assets/logo/george3082.jpeg');
+      /* background-image: url('./../../../../../assets/logo/george3082.jpeg');  */
+      background-color: rgb(182,226,211);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
       object-fit: cover;
-      height: 600px;  
-      /* opacity: calc(70%);  */
+      height: 500px;  
+      /* opacity: calc(70%);   */
   }
 
   /* .relative[_ngcontent-ng-c3460741518] {
@@ -92,14 +98,18 @@
 
   .parrafo {
       /* border: 1px solid red; */
-      height: 800px;
-      width: 900px;
-      margin: 0 20px 0 40px;
-      padding: 100px 0 0 0;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: beige;
-      font-size: 2.5rem;
-      font-weight: 600;
+      height: 300px;
+      width: 1000px;
+      /* margin: 0 20px 0 65px; */
+      margin-left: 300px;
+      padding: 20px 0 0 0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+      /* color: rgb(252, 252, 245); */
+      color: rgb(93,96,95);
+      font-size: 2.0rem;
+      font-weight:400;
+      text-align: center;
   }
   .gap-8 {
       padding: 40px 0px 0px 60px; 
