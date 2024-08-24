@@ -2,5 +2,16 @@
     box-shadow: 0px 0px 1                                                                 0px #000;
 } */
 
-
+.text-white {
+    --tw-text-opacity: 1;
+    /* color: rgb(255 255 255 / var(--tw-text-opacity)); */
+    color: rgb(93,96,95);
+    background: rgb(182, 226, 211);
+}
+.text-gray-700 {
+    color: rgb(93,96,95);
+}
+.text-gray-900 {
+    color: rgb(93,96,95);
+}
 

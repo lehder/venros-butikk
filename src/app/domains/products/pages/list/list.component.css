@@ -1,4 +1,22 @@
 .gap-8 {
-    margin: 70px 20px;
+    margin: 15px 20px;
     background: rgb(246,249,252);
 }
+.sub-title-home {
+    font-size: 3.0rem;
+    text-align: center;
+    color: rgb(104, 87, 69);
+    background-color: rgb(182,226,211);
+    padding: 20px 40px 20px 40px;
+    /* margin-left: 30px; */
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+}
+.bg-white {
+    background: rgb(182,226,211);
+}
+/* .gap-8 {
+    margin: 70px 20px;
+    background: rgb(182, 226, 211);
+} */

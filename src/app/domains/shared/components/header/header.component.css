@@ -22,7 +22,8 @@
   
   .md\:p-0 {
       /* color: rgb(45, 44, 44);  */
-      color: beige;
+      /* color: beige; */
+      color: rgb(93,96,95);
       padding: 28px; 
    } 
   .font-medium { 
@@ -103,7 +104,7 @@
       /* margin: 0 20px 0 65px; */
       margin-left: 300px;
       padding: 20px 0 0 0;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
       /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
       /* color: rgb(252, 252, 245); */
       color: rgb(93,96,95);

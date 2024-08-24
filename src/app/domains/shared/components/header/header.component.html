@@ -37,8 +37,9 @@
         <!-- <button class="p-2 border rounded relative" (click)="toogleSideMenu()"> -->
           <button class="p-1 top-3 border rounded bg-black-200" (click)="toogleSideMenu()">
           <!-- <div class="absolute -top-0 -left-2 rounded h-6 w-6 bg-white text-white text-xs"></div> -->
+          <!-- <div class="absolute -top- -20 -left- -30 rounded h-8 w-8 bg-transparent-300 text-white text-xs">{{ cart.length }}</div>-->
           <div class="absolute -top- -20 -left- -30 rounded h-8 w-8 bg-transparent-300 text-white text-xs"></div>
-          <svg
+          <svg 
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -83,10 +84,15 @@
     <div class="pt-6 flex flex-col">
       <div class="flex justify-between items-center space-y-2" *ngFor="let product of cart">
         <div class="flex space-x-2 items-center">
-          <img class="w-6 h-6" [src]="product.image" alt="product.title">
+          <img class="w-6 h-6" [src]="product.image" [alt]="product.title">
           <h3>{{ product.title }}</h3>
         </div>
-        <p>{{ product.price }}</p>
+        <div>
+          <p>{{ product.price }}</p>
+        </div>
+        <div>
+          <p>Total: {{ total() }}</p>
+        </div>
       </div>
     </div>
 
@@ -109,15 +115,11 @@
     <p class="parrafo">Descubre regalos únicos y creativos, desayunos sorpresa, 
       impresiones personalizadas en vasos y camisetas, Imanes personalizados. 
       Sorprende a tus seres queridos con detalles inolvidables, 
-      diseñados especialmente para cada ocasión.</p>
+      diseñados especialmente para cada ocasión.</p>    
   </div>
-  
 </section>
 
 
-<!---->
-
-<!-- Slider -->
 
 
-<!--  -->
+

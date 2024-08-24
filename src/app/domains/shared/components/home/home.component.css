@@ -6,8 +6,9 @@
     font-size: 3.0rem;
     text-align: center;
     color: rgb(104, 87, 69);
+    background-color: rgb(182,226,211);
     padding: 20px 40px 20px 40px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     
@@ -19,6 +20,7 @@
     background-size: cover;
 }
 .img-2 {
+    border: 1px solid red;
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -51,9 +53,46 @@
     color: rgb(104, 87, 69);
     text-align: center;
     padding:50px;
-    background: rgb(232,230,233);
+    background: rgb(255, 255, 255);
     line-height: 1.7rem;
     letter-spacing: 3px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     margin-bottom: 5px;
+}
+.bg-white {
+    background-color: rgb(182,226,211);
+}
+.card-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.text-card-container{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+
+    font-size: 3.0rem;
+    text-align: center;
+    color: rgb(41, 34, 25);
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.parrafo-card-container {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+
+    font-size: 1.7rem;
+    color: rgb(41, 34, 25);
+    text-align: center;
+}
+.images-card {
+    width: 100vmax;
+    object-fit: cover;
+    height: 500px;
 }
