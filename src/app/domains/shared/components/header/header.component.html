@@ -18,8 +18,11 @@
             <a routerLink="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
           </li>
           <li>
-            <a routerLink="/list" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">List</a>
+            <a routerLink="/productos" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Productos</a>
           </li>
+          <!-- <li>
+            <a routerLink="/list" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">List</a>
+          </li> -->
           <li>
             <a routerLink="/about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
           </li>
@@ -38,7 +41,7 @@
           <button class="p-1 top-3 border rounded bg-black-200" (click)="toogleSideMenu()">
           <!-- <div class="absolute -top-0 -left-2 rounded h-6 w-6 bg-white text-white text-xs"></div> -->
           <!-- <div class="absolute -top- -20 -left- -30 rounded h-8 w-8 bg-transparent-300 text-white text-xs">{{ cart.length }}</div>-->
-          <div class="absolute -top- -20 -left- -30 rounded h-8 w-8 bg-transparent-300 text-white text-xs"></div>
+          <div class="absolute -top- -20 -left- -30 rounded h-8 w-8 bg-transparent-300 text-white text-xs">{{ cart().length }}</div>
           <svg 
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -82,7 +85,7 @@
     </button>
   </div>
     <div class="pt-6 flex flex-col">
-      <div class="flex justify-between items-center space-y-2" *ngFor="let product of cart">
+      <div class="flex justify-between items-center space-y-2" *ngFor="let product of cart()">
         <div class="flex space-x-2 items-center">
           <img class="w-6 h-6" [src]="product.image" [alt]="product.title">
           <h3>{{ product.title }}</h3>

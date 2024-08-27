@@ -1,10 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './../../components/product/product.component';
 import { HeaderComponent } from './../../../shared/components/header/header.component';
 import { Product } from '../../../shared/models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
 import { HomeComponent } from '../../../shared/components/home/home.component';
+import { CartService } from '../../../shared/services/cart.service';
 
 @Component({
   selector: 'app-list',
@@ -16,7 +17,8 @@ import { HomeComponent } from '../../../shared/components/home/home.component';
 export class ListComponent {
 
   products = signal<Product[]>([]);
-  cart = signal<Product[]>([]);
+  // cart = signal<Product[]>([]);
+  private CartService = inject(CartService);
 
   constructor() {
     const initProducts: Product[] = [
@@ -122,6 +124,7 @@ export class ListComponent {
   }
 
   addToCart(product: Product) {
-   this.cart.update(prevState => [...prevState, product]); 
+  //  this.cart.update(prevState => [...prevState, product]); 
+   this.CartService.addToCart(product)
   }  
 }

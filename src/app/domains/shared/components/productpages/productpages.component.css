@@ -1,0 +1,36 @@
+.sub-title-home {
+    font-size: 3.0rem;
+    text-align: center;
+    color: rgb(104, 87, 69);
+    background-color: rgb(182,226,211);
+    padding: 20px 40px 20px 40px;
+    /* margin-left: 30px; */
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
+}
+.md\:grid-cols-4 {
+    margin-top: 10px;
+    margin: 10px 10px;
+}
+.info-container {
+    display: flex;
+    margin: 10px 20px;
+}
+.description {
+    font-size: 1.3rem;
+    color: rgb(104, 87, 69);
+    text-align: center;
+    /* padding:50px; */
+    background: rgb(255, 255, 255);
+    line-height: 1.7rem;
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    margin: 20px 10px 10px 10px;
+}
+
+/* Footer */
+
+.bg-white {
+    background-color: rgb(182,226,211);
+}

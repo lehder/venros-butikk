@@ -20,7 +20,6 @@
     background-size: cover;
 }
 .img-2 {
-    border: 1px solid red;
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -59,9 +58,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     margin-bottom: 5px;
 }
-.bg-white {
-    background-color: rgb(182,226,211);
-}
+
 .card-container {
     position: relative;
     display: inline-block;
@@ -95,4 +92,9 @@
     width: 100vmax;
     object-fit: cover;
     height: 500px;
+}
+/* Footer */
+
+.bg-white {
+    background-color: rgb(182,226,211);
 }
