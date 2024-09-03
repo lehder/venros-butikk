@@ -6,6 +6,8 @@ import { Product } from '../../../shared/models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
 import { HomeComponent } from '../../../shared/components/home/home.component';
 import { CartService } from '../../../shared/services/cart.service';
+import { ProductService } from '../../../shared/services/product.service';
+
 
 @Component({
   selector: 'app-list',
@@ -19,9 +21,10 @@ export class ListComponent {
   products = signal<Product[]>([]);
   // cart = signal<Product[]>([]);
   private CartService = inject(CartService);
+  private ProductService = inject(ProductService);
 
-  constructor() {
-    const initProducts: Product[] = [
+  /*constructor() {
+     const initProducts: Product[] = [
       {
         id: Date.now(),
         title: 'Producto 1',
@@ -136,11 +139,25 @@ export class ListComponent {
         images: undefined
       }
     ];
-    this.products.set(initProducts);
-  }
+    this.products.set(initProducts); 
+  }*/
+
+    ngOnInit() {
+      this.ProductService.getProducts()
+      .subscribe({
+        next: (products) => {
+          this.products.set(products);
+        },
+        error: () => {
+          
+        }
+      })
+    }   
 
   addToCart(product: Product) {
   //  this.cart.update(prevState => [...prevState, product]); 
    this.CartService.addToCart(product)
   }  
 }
+              
+
