@@ -6,11 +6,12 @@
     font-size: 3.0rem;
     text-align: center;
     color: rgb(104, 87, 69);
-    background-color: rgb(182,226,211);
-    padding: 20px 40px 20px 40px;
+    background-color: rgb(108, 234, 191);
+    padding: 0 40px 100px 40px;
     /* margin-left: 30px; */
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    height: 40px;
     
 }
 .img-1 {

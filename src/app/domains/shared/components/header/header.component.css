@@ -78,14 +78,14 @@
   }
   
   .header-container {
-      /* background-image: url('./../../../../../assets/logo/george3082.jpeg');  */
-      background-color: rgb(182,226,211);
+      /* background-image: url('./../../../../../assets/logo/george3082.jpeg');*/
+      background-color: rgb(182,226,211); 
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
       object-fit: cover;
-      height: 500px;  
+      height: 200px;  
       /* opacity: calc(70%);   */
   }
 
@@ -95,14 +95,16 @@
     margin-left: 200px;
     margin: 0 ;
 }  */
+  
 
 
   .parrafo {
       /* border: 1px solid red; */
       height: 300px;
-      width: 1000px;
+      width: 950px;
       /* margin: 0 20px 0 65px; */
-      margin-left: 300px;
+      margin-left: 500px;
+      margin-top: -80px;
       padding: 20px 0 0 0;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
       /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -120,5 +122,8 @@
   .relative {
     border: 1px solid red;
     height: 400px;
+  }
+  .box {
+    background: rgb(182,226,211);
   }
   
