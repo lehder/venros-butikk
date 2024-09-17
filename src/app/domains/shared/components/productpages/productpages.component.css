@@ -49,3 +49,21 @@
 .bg-white {
     background-color: rgb(182,226,211);
 }
+@media screen and (max-width: 480px) {
+    .sub-title-home {
+        font-size: 1.5rem;
+        height: 15px;
+      }
+      .info-container {
+        display: block;
+        margin: 20px 35px;
+      }  
+    .gap-4 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }  
+    .description {
+        font-size: 1.3rem;
+        background-color: aliceblue;
+    }
+
+}

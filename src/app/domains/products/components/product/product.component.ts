@@ -1,7 +1,7 @@
 import { Component, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EventEmitter } from '@angular/core';
-import { Product } from './../../../shared/models/product.model';
+import { Product } from '@shared/models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
 
 

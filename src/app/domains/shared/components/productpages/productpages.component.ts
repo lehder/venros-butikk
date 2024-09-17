@@ -10,6 +10,7 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './productpages.component.css'
 })
 export class ProductpagesComponent {
+product: any;
 cart(): import("../../models/product.model").Product[] {
 throw new Error('Method not implemented.');
 }

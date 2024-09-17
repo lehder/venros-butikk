@@ -1,60 +1,26 @@
+<app-header></app-header>
 
-<!-- <input type="number" [value]="duration()" (change)="changeDuration($event)">
-<input type="text" [value]="message()" (change)="changeMessage($event)">
- -->
-
-    <!-- <p class="text-xs">Numero de clientes
-        <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/>
-    </p> -->
-
- <!-- <div class="px-10">
-    <h1 class="text-lg font-bold">About as</h1>
-    <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit earum adipisci nobis quia et a perspiciatis 
-        quam voluptatem perferendis doloribus aspernatur aperiam alias, 
-        dicta, sed architecto iure sapiente odio quasi.</p>
-    <img class="imagen" src="https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> 
-    <img class="imagen" src="https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    <img class="imagen" src="https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    <img class="imagen" src="https://images.pexels.com/photos/911738/pexels-photo-911738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+<body>
+    <section class="contact">
+        <div class="u-wrapper">
+          <div class="contact-content">
     
-</div> --> 
+            <form id="form" action="" class="form">
+              <h3 class="tag"><span>ENVIANOS TU MENSAJE, Y TE DAREMOS PRESUPUETO.</span></h3>
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Juan">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn primary full">enviar mensaje</button>
+            </form>
+            <a href="mailto:henaoleniscaterine@gmail.com" id="trucazo"></a>
+          </div>
+        </div>
+      </section>
 
-<!-- <app-header [cart]="cart()"></app-header>  -->
- <app-header></app-header>
-
-<div class="px-10">
-    <h1 class="text-lg font-bold">About as</h1>
-
-    <div class="container">
-        <span class="description-1">
-            VenRos, es una empresa que se dedica a la elaboración de regalos totalmente hechos con creatividad y personalizados, 
-            para que la persona que lo recibe, obtenga el efecto de 
-            importancia y cuidado que se merece, para esto obtenemos 
-            información de la persona que lo va a obtener, 
-            y así poder llegar a elaborar un regalo con las características 
-            del mismo y tener ese efecto de felicidad y satisfacción.
-        </span>
-        <img class="imagen-1" src="https://img.freepik.com/foto-gratis/feliz-celebracion-ano-nuevo-2024_23-2151022290.jpg?w=1060&t=st=1719397147~exp=1719397747~hmac=173bf84d4ec88af69d79b63396f174316e14bebae439f04dff024918a3695073" alt="">
-    </div>
-    <div class="container">
-        <img class="imagen-2" src="https://img.freepik.com/free-photo/friends-celebrating-together-medium-shot_23-2149746474.jpg?w=1060&t=st=1719399846~exp=1719400446~hmac=bc08e7c9f2cc82e5e08910b6d7edc94b34426d5e6940c2650128f8d486220dad" alt=""> 
-        <span class="description-2">
-            Mi nombre es Caterine Lenis, y soy la creadora de VenRos, 
-            me considero una persona muy creativa, todo surgió cuando 
-            nacieron mis hijas, me dedicaba a la preparación y 
-            decoración de sus cumpleaños, quería que todo saliera perfecto, 
-            me encantaba llenar de colores, diseños, figuras y encanto el 
-            recinto, quería cautivar ese día con toda mi creatividad. 
-            De ahí salió la idea de crear VenRos, crear Desayunos sorpresa 
-            personalizados, estampar tazas, hacer imanes con imágenes, 
-            estampar camisetas, y mucho más, y facilitar la elección de regalos que 
-            en algunos momentos se vuelve tedioso por no saber qué elegir y 
-            así ayudar al cliente a tener la mejor idea del regalo perfecto.
-        </span>
-    </div>
-</div>
-<section>
-    <footer class="bg-white dark:bg-gray-900">    
+      <footer class="bg-white dark:bg-gray-900">    
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
               <div class="mb-6 md:mb-0">
@@ -141,8 +107,28 @@
               </div>
           </div>
         </div>
-    </footer>
-</section>
+    </footer>  
+    
+ 
 
 
 
+
+    
+  <script>
+    const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#trucazo')
+    
+        $form.addEventListener('submit', handleSubmit)
+    
+        function handleSubmit(event) {
+          event.preventDefault()
+          const form = new FormData(this)
+          console.log(form.get("name"))
+          $buttonMailto.setAttribute('href', `mailto:henaoleniscaterine@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+          $buttonMailto.click()
+        }
+  </script>
+    
+    
+    </body>  

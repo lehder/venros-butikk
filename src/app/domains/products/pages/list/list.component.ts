@@ -1,12 +1,12 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductComponent } from './../../components/product/product.component';
-import { HeaderComponent } from './../../../shared/components/header/header.component';
-import { Product } from '../../../shared/models/product.model';
+import { ProductComponent } from '@products/components/product/product.component';
+import { HeaderComponent } from '@shared/components/header/header.component';
+import { Product } from '@shared/models/product.model';
 import { RouterLinkWithHref } from '@angular/router';
-import { HomeComponent } from '../../../shared/components/home/home.component';
-import { CartService } from '../../../shared/services/cart.service';
-import { ProductService } from '../../../shared/services/product.service';
+import { HomeComponent } from '@shared/components/home/home.component';
+import { CartService } from '@shared/services/cart.service';
+import { ProductService } from '@shared/services/product.service';
 
 
 @Component({

@@ -5,15 +5,26 @@
 .sub-title-home {
     font-size: 3.0rem;
     text-align: center;
-    color: rgb(104, 87, 69);
-    background-color: rgb(108, 234, 191);
+    color: rgb(68, 56, 44);
+    /* background-color: rgb(108, 234, 191); */
+    /* background-color: rgb(237,102,108); */
+    background-color: rgb(254, 236, 170);
     padding: 0 40px 100px 40px;
     /* margin-left: 30px; */
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     height: 40px;
-    
 }
+
+.overflow-hidden {
+    height: 800px;
+}
+.img-contenedor {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
 .img-1 {
     height: 500px;
     width: 100%;
@@ -98,4 +109,53 @@
 
 .bg-white {
     background-color: rgb(182,226,211);
+}
+
+
+@media screen and (max-width: 480px){
+    .logo {
+        margin-left: 0;
+    }
+    .overflow-hidden {
+        height: 500px;
+    }
+    .sub-title-home {
+        font-size: 1.5rem;
+        height: 15px;
+      }
+      /* .grid {
+        display: block;
+      } */
+      .grid-cols-2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    } 
+    .rounded-lg {
+        border-radius: 0.5rem;
+        width: -webkit-fill-available;
+    }
+    .text-card-container {
+       font-size: 2rem;
+       margin-left: -100px;
+       margin-top: 20px;
+       font-style: inherit;
+    }
+    .images-card {
+        height: 300px;
+    }
+    .parrafo-card-container {
+        margin-left: -100px;
+        width: 350px;
+        margin-top: 60px;
+        font-size: 1.7rem;
+        
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px){
+    .logo {
+        margin-left: 0;
+    }
+    
 }

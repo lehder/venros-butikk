@@ -39,7 +39,14 @@
    height: auto;
    box-shadow: 0px 0px 30px #000;     
 }
-.description {
+.description-1 {
+    font-family: Lexend Deca, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: normal;
+}
+.description-2 {
     font-family: Lexend Deca, sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -53,3 +60,28 @@
     height: auto;
     box-shadow: 0px 0px 30px #000;     
  }
+/* Footer */
+
+.bg-white {
+    background-color: rgb(182,226,211);
+}
+@media screen and (max-width: 480px) {
+    .px-10 {
+        height: 1400px;
+    }
+    .imagen-1 {
+        margin-left: -200px;
+        margin-top: -90px;
+    }
+    .description-1 {
+        width: 400px;
+        margin-top: 100px;
+        font-size: large;
+    }
+    .description-2 {
+        width: 400px;
+        margin-top: 150px;
+        margin-left: -205px;
+        font-size: large;
+    }
+}

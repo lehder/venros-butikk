@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from '../../../shared/components/header/header.component';
-import { ListComponent } from '../../../products/pages/list/list.component';
+import { HeaderComponent } from '@shared/components/header/header.component';
+import { ListComponent } from '@products/pages/list/list.component';
 
-import { CounterComponent } from '../../../shared/components/counter/counter.component';
+import { CounterComponent } from '@shared/components/counter/counter.component';
 import { RouterLinkWithHref } from '@angular/router';
-import { HomeComponent } from '../../../shared/components/home/home.component';
+import { HomeComponent } from '@shared/components/home/home.component';
 
 
 @Component({

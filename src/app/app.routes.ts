@@ -6,6 +6,7 @@ import { AboutComponent } from './domains/info/pages/about/about.component';
 import { HeaderComponent } from './domains/shared/components/header/header.component';
 import { HomeComponent } from './domains/shared/components/home/home.component';
 import { ProductpagesComponent } from './domains/shared/components/productpages/productpages.component';
+import { ContactComponent } from '@shared/components/contact/contact.component';
 
 
 
@@ -36,6 +37,10 @@ export const routes: Routes = [
         {
             path: 'about',
             component: AboutComponent, 
+        },
+        {
+            path: 'contact',
+            component: ContactComponent, 
         },
  
 ];
