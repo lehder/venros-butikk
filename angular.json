@@ -55,7 +55,6 @@
               "src/styles.css"
             ],
             "scripts": []
-            
           },
           "configurations": {
             "production": {
@@ -115,11 +114,60 @@
             ],
             "scripts": []
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "venros-butikk:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "venros-butikk:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "ct": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "venros-butikk:serve",
+            "watch": true,
+            "headless": false,
+            "testingType": "component"
+          },
+          "configurations": {
+            "development": {
+              "devServerTarget": "venros-butikk:serve:development"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "venros-butikk:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "venros-butikk:serve:production"
+            }
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "67f04a4e-623b-4844-b03e-723c03bbb48f"
+    "analytics": "67f04a4e-623b-4844-b03e-723c03bbb48f",
+    "schematicCollections": [
+      "@cypress/schematic",
+      "@schematics/angular"
+    ]
   }
 }
