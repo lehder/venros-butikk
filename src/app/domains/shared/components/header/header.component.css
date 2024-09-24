@@ -77,7 +77,7 @@
     border-radius: 0 0 10px 10px;
     /* background-color: rgb(85, 234, 234); */
     background-color: rgb(182,226,211);
-
+    margin-top: 50px;
   }
   
   .header-container {
@@ -161,13 +161,14 @@
     }
     .logo {
         margin-left: 0;
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
     .subtitle {
       margin-left: 30px;
       width: 200px;
       font-size: 1.8rem;
+      margin: auto;
     }
     .parrafo {
       font-size: 1.2rem;
@@ -175,6 +176,8 @@
       margin-top: 0;
       width: auto;
       margin: 5px;
+      font-weight: 600;
+      margin-top: auto;
     }
     
     

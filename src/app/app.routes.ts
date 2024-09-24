@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadAllModules  } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules, ROUTES  } from '@angular/router';
 
 import { ListComponent } from './domains/products/pages/list/list.component';
 import { AboutComponent } from './domains/info/pages/about/about.component';
@@ -46,7 +46,8 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
+    imports: [RouterModule.forRoot(routes, { 
+        useHash: true,  
       preloadingStrategy: PreloadAllModules
     })],
     exports: [RouterModule]
