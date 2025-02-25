@@ -10,7 +10,10 @@
     background: var(--gradient);
     margin: 0;
     height: 800px;
-    background-color: rgb(182,226,211);
+    background-color: rgb(232, 230, 233);
+  }
+  .contact-content {
+    height: 800px;
   }
   .h3 {
     font-size: 48px;
@@ -98,7 +101,12 @@
     }
 
     .bg-white {
-        background-color: rgb(182,226,211);
+        /* background-color: rgb(182,226,211); */
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,81,255,0.9) 0%, rgba(0,212,255,1) 100%);
+    }
+    .text-gray-500 {
+      color: azure;
     }
   
   
@@ -130,7 +138,8 @@
       }
       .contact {
         /*  border: 1px solid red; */
-        background-color: rgb(182,226,211);
+        /* background-color: rgb(182,226,211); */
+        background-color: rgb(232,230,233);
          width: auto;
          height: 700px;
          padding: 20px;
@@ -162,7 +171,8 @@
       }
       .contact {
        /*  border: 1px solid red; */
-       background-color: rgb(182,226,211);
+       /* background-color: rgb(182,226,211); */
+       background-color: rgb(232,230,233);
         width: 860px;
         height: 800px;
         padding: 50px;

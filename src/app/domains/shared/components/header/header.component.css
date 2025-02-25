@@ -1,9 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .w-full {
     height: 130px; 
     font-size: 1.5rem; 
     margin-left: 300px;
     /* background-color: rgb(108, 234, 191); */
-    background-color: rgb(182,226,211);
+    /* background-color: rgb(182,226,211); */
+    /* background-color: rgb(63,181,255);  */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52, 141, 255, 0.9) 0%, rgba(7,201,254,1) 100%);
     border-radius: 10px;
   }
   .p-4 {
@@ -26,7 +34,8 @@
   .md\:p-0 {
       /* color: rgb(45, 44, 44);  */
       /* color: beige; */
-      color: rgb(93,96,95);
+      /* color: rgb(29,42,38); */
+      color: azure;
       padding: 28px; 
    } 
   .font-medium { 
@@ -37,7 +46,6 @@
   }
   
   .nav {
-      border: 1px solid red;
       position: fixed; 
       float: left;
   }
@@ -45,14 +53,13 @@
       background: rgb(146, 247, 146); 
   } */
   .logo {
-      height: 250px;
+      height: 282px;
       width: 400px;
       object-fit: cover;
       margin: 0;
       margin-left: 65px;
       border-radius: 0 ;
   }
-  
   .title {
     font-size: 4.0rem;
     color: beige;
@@ -64,25 +71,31 @@
   }
   .subtitle {
 
-    font-family: "Pacifico", cursive;
-    font-weight: 800;
     font-style: normal;
      
     /* color: rgb(9, 28, 25); */
-    color: rgb(93,96,95);
+    /* color: rgb(29,42,38); */
+    color: azure;
+    font-weight: 800;
     font-size: 2rem;
     margin-left: 65px;
     width: 400px;
     text-align: center;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 10px 0 10px;
     /* background-color: rgb(85, 234, 234); */
-    background-color: rgb(182,226,211);
+    /* background-color: rgb(182,226,211);  */
+    /* background-color: rgb(73,110,255); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(81, 149, 250) 0%, rgba(81, 149, 250, 1) 100%);
     margin-top: 50px;
   }
   
   .header-container {
       /* background-image: url('./../../../../../assets/logo/george3082.jpeg');*/
-      background-color: rgb(182,226,211); 
+      /* background-color: rgb(182,226,211);  */
+      /* background-color: rgb(63,181,255); */
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,81,255,0.9) 0%, rgba(0,212,255,1) 100%);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -90,6 +103,7 @@
       object-fit: cover;
       height: 200px;  
       /* opacity: calc(70%);   */
+      /* background-attachment: fixed; */
   }
 
   /* .relative[_ngcontent-ng-c3460741518] {
@@ -104,15 +118,16 @@
   .parrafo {
       /* border: 1px solid red; */
       height: 300px;
-      width: 950px;
+      width: 750px;
       /* margin: 0 20px 0 65px; */
       margin-left: 600px;
-      margin-top: -80px;
+      margin-top: -250px;
       padding: 20px 0 0 0;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
       /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
       /* color: rgb(252, 252, 245); */
-      color: rgb(93,96,95);
+      /* color: rgb(29,42,38); */
+      color: azure;
       font-size: 2.0rem;
       font-weight:400;
       text-align: center;
@@ -127,7 +142,11 @@
     height: 400px;
   }
   .box {
-    background: rgb(182,226,211);
+    /* background: rgb(182,226,211); */
+    /* background-color: rgb(63,181,255); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,81,255,0.9) 0%, rgba(0,212,255,1) 100%);
+
   }
 
   @media screen and (max-width: 720px){
@@ -135,19 +154,25 @@
   }  
   @media screen and (max-width: 480px){
     .header-container {
-      height: 400px;
+      height: 460px;
     }
-    .text-gray-500 {
+    .text-gray-300 {
       margin-right: 50px;
       margin-top: 30px;
       padding: 0;
+      color: black;
+      border: 1px solid azure;
     }
     .w-full {
       margin-left: 280px;
+      height: 200px;
+    }
+    .w-5 {
+      width: 2.0rem; 
+      /* color: azure; */
     }
     .md\:p-0 {
       padding: 5px;
-
     }
     .font-medium {
       font-size:large;
@@ -165,19 +190,21 @@
         width: 300px;
     }
     .subtitle {
+      border: 1px solid red;
+      display: none;
       margin-left: 30px;
       width: 200px;
       font-size: 1.8rem;
       margin: auto;
     }
     .parrafo {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-left: 0;
       margin-top: 0;
       width: auto;
       margin: 5px;
       font-weight: 600;
-      margin-top: auto;
+      margin-top: -30px;
     }
     
     
@@ -188,7 +215,7 @@
       height: 400px;
     }
     .logo {
-        margin-left: 0;
+        
     }
     
 }

@@ -1,14 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .section {
     background: rgb(232,230,233); 
-   
 }
 .sub-title-home {
     font-size: 3.0rem;
     text-align: center;
-    color: rgb(68, 56, 44);
+    /* color: rgb(44, 36, 29); */
+    color: azure;
     /* background-color: rgb(108, 234, 191); */
     /* background-color: rgb(237,102,108); */
-    background-color: rgb(254, 236, 170);
+    /* background-color: rgb(254, 236, 170); */
+    background-color: #D29CFE;
     padding: 0 40px 100px 40px;
     /* margin-left: 30px; */
     font-weight: 600;
@@ -61,45 +67,36 @@
 }
 .parrafo {
     font-size: 1.3rem;
-    color: rgb(104, 87, 69);
+    color: rgb(31, 26, 21);
     text-align: center;
     padding:50px;
     background: rgb(255, 255, 255);
     line-height: 1.7rem;
-    letter-spacing: 3px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    letter-spacing: 1px;
+    /* font-family: "Poppins", serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  */
+    font-weight: 400;
+    font-style: normal; 
     margin-bottom: 5px;
 }
 
-.card-container {
+.whatsapp-container {
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 501px;
 }
-.text-card-container{
-    position: absolute;
-    top: 20%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+.card-contenedor {
+    margin-top: -400px;
+    margin-left: 900px; 
     width: 500px;
-
     font-size: 3.0rem;
     text-align: center;
     color: rgb(41, 34, 25);
     font-weight: 600;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
-.parrafo-card-container {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 500px;
 
-    font-size: 1.7rem;
-    color: rgb(41, 34, 25);
-    text-align: center;
-}
 .images-card {
     width: 100vmax;
     object-fit: cover;
@@ -108,11 +105,19 @@
 /* Footer */
 
 .bg-white {
-    background-color: rgb(182,226,211);
+    /* background-color: rgb(182,226,211); */
+    /* background-color: rgb(63,181,255); */
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,81,255,0.9) 0%, rgba(0,212,255,1) 100%);
+}
+.text-gray-500 {
+    color: azure;
 }
 
 
 @media screen and (max-width: 480px){
+    
     .logo {
         margin-left: 0;
     }
@@ -120,13 +125,19 @@
         height: 500px;
     }
     .sub-title-home {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         height: 15px;
         padding-top: 10px;
       }
       /* .grid {
         display: block;
       } */
+    /* .home-main {
+        width: 100%;
+    }   */ 
+    .section-2 {
+       margin: 20px 10px;
+    }   
       .grid-cols-2 {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     } 
@@ -134,22 +145,27 @@
         border-radius: 0.5rem;
         width: -webkit-fill-available;
     }
-    .text-card-container {
-       font-size: 2rem;
+    .h3 {
+       font-size: 1.7rem;
        margin-left: -100px;
        margin-top: 20px;
        font-style: inherit;
     }
-    .images-card {
+    .whatsapp-container {
+        width: 100%;
+    }
+    .card-contenedor {
+        margin-left: 0;
+        margin-top: -270px;
+        width: 390px;
+        font-size: 1.4rem;
+    }
+
+
+    /* .images-card {
         height: 300px;
-    }
-    .parrafo-card-container {
-        margin-left: -100px;
-        width: 350px;
-        margin-top: 60px;
-        font-size: 1.7rem;
-        
-    }
+    } */
+    
     
     
 }

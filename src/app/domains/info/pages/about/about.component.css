@@ -63,11 +63,20 @@
 /* Footer */
 
 .bg-white {
-    background-color: rgb(182,226,211);
+    /* background-color: rgb(182,226,211); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,81,255,0.9) 0%, rgba(0,212,255,1) 100%);
 }
+.text-gray-500 {
+    color: azure;
+}
+
 @media screen and (max-width: 480px) {
     .px-10 {
-        height: 1400px;
+        height: 1500px;
+    }
+    .text-lg {
+        font-size: 2.0rem;
     }
     .imagen-1 {
         margin-left: -200px;
@@ -75,12 +84,14 @@
     }
     .description-1 {
         width: 400px;
-        margin-top: 100px;
+        /* margin-top: 100px; */
+        margin: 100px 30px 30px 0;
         font-size: large;
     }
     .description-2 {
         width: 400px;
-        margin-top: 150px;
+        /* margin-top: 150px; */
+        margin: 150px 30px 30px 0;
         margin-left: -205px;
         font-size: large;
     }

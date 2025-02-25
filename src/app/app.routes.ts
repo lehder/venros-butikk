@@ -18,21 +18,21 @@ export const routes: Routes = [
             pathMatch: 'full',
         }, 
         {
-            path: 'home',
-            component: HomeComponent, 
-        }, 
-        {
             path: 'header',
             component: HeaderComponent, 
         },
         {
+            path: 'home',
+            component: HomeComponent, 
+        }, 
+        {
             path: 'productos',
             component: ProductpagesComponent, 
         },
-        {
+        /* {
             path: 'list', 
             component: ListComponent, pathMatch: 'full'
-        },
+        }, */
         
         {
             path: 'about',
